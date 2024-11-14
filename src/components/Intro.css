@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.intro-container {
+    background-image: url('../images/IntroImg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.intro-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.intro-container h1,
+.intro-container h3 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+.intro-container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro-container h3 {
+    font-size: 1.5em;
+}

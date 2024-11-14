@@ -1,0 +1,39 @@
+.comic-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.comic-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.5); /* Solo el fondo tiene el desenfoque y oscurecimiento */
+    background-image: inherit; /* Hereda la imagen de fondo del estilo en línea */
+}
+
+.comic-intro-content {
+    position: relative;
+    z-index: 2; /* Mantiene el contenido por encima del fondo */
+    text-align: center;
+    color: white;
+}
+
+.comic-intro-content h2 {
+    font-size: 2.5em; /* Ajusta el tamaño según tus necesidades */
+}
+
+.comic-intro img {
+    height: 66vh;
+    width: auto; /* Mantiene la proporción de la imagen */
+}
+
